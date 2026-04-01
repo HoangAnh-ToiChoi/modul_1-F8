@@ -1,0 +1,133 @@
+@use "../../variable" as v;
+@use "../../components/small-circle" as sc;
+@use "../../mixins" as m;
+
+.m-w280 {
+    max-width: 280px;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include m.screen(xl) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include m.screen(lg) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+        color: #ffffff;
+        font-family: Manrope;
+        line-height: 30px;
+
+        @include m.screen(sm) {
+            font-size: 1.8rem;
+        }
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        list-style: none;
+
+        @include m.screen(lg) {
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #beccc7;
+            font-family: Manrope;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 28px;
+            padding: 12px 0;
+            text-decoration: none;
+        }
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo img {
+        color: #fff;
+        margin-bottom: 25px; 
+
+        @include m.screen(sm) {
+            margin-left: 0; 
+        }
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        gap: 20px;
+
+        @include m.screen(sm) {
+            justify-content: flex-start;
+            gap: 15px;
+            margin-top: 15px; 
+        }
+
+        a {
+            padding: 15px;
+            color: #fff;
+            background: #313d39;
+        }
+
+        li:hover a {
+            background: #fd6038;
+        }
+    }
+
+    .footer-bottom {
+        margin-top: 60px;
+        padding-top: 40px;
+        border-top: 1px solid #313d39; 
+
+        @include m.screen(xl) {
+            margin-top: 50px;
+        }
+        @include m.screen(lg) {
+            margin-top: 40px;
+            padding-top: 30px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            @include m.screen(sm) {
+                flex-direction: column;
+                gap: 20px;
+                text-align: left;
+                align-items: flex-start;
+            }
+
+            figure {
+                img {
+                    margin: 0;
+                }
+            }
+
+            p {
+                font-size: 1.4rem;
+                font-family: Manrope;
+                color: #beccc7;
+                line-height: 24px;
+            }
+        }
+    }
+}

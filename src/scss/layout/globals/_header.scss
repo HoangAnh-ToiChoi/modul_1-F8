@@ -1,0 +1,165 @@
+@use "../../mixins" as m;
+
+.header {
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    figure {
+        padding: 10px 0 0;
+
+        @include m.screen(lg) {
+            display: none; 
+        }
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        padding: 10px 0;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #000;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        @include m.screen(lg) {
+            display: flex;
+        }
+    }
+
+    .row {
+        @include m.screen(lg) {
+            align-items: center;
+            justify-content: space-between;
+            position: relative; 
+        }
+    }
+
+    .col-2 {
+        @include m.screen(lg) {
+            display: none; 
+        }
+    }
+
+    .col-6 {
+        @include m.screen(lg) {
+            flex: 0 0 auto; 
+            width: auto;
+        }
+    }
+
+    .col-4 {
+        @include m.screen(lg) {
+            flex: 0 0 auto; 
+            width: auto;
+            margin-left: auto; 
+        }
+    }
+
+    .nav {
+        @include m.screen(lg) {
+            position: absolute;
+            top: 100%; 
+            left: 15px; 
+            right: 15px; 
+            z-index: 999; 
+            background: #000; 
+            border-radius: 4px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5); 
+        }
+
+        .sub-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+
+            @include m.screen(xl) {
+                padding: 20px 0;
+            }
+
+            @include m.screen(lg) {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 20px;
+                border: 1px solid #333; 
+                border-radius: inherit;
+            }
+
+            .nav-item {
+                i {
+                    font-size: 1.2rem;
+                    margin-left: 8px;
+                }
+
+                @include m.screen(lg) {
+                    display: flex;
+                    justify-content: space-between; 
+                    align-items: center;
+                    width: 100%;
+                    color: #fff; 
+                    cursor: pointer;
+                    padding-bottom: 15px; 
+                    border-bottom: 1px solid #fff; 
+
+                    &:last-child {
+                        border-bottom: none; 
+                        padding-bottom: 0;
+                    }
+
+                    a {
+                        color: #fff; 
+                    }
+                }
+
+                @include m.screen(sm) {
+                    font-size: 1.6rem; 
+                }
+            }
+        }
+    }
+
+    .nav-toggle:checked ~ .nav .sub-nav {
+        display: flex;
+    }
+
+    .info-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+
+        @include m.screen(xl) {
+            padding: 20px 0;
+        }
+        @include m.screen(lg) {
+            padding: 15px 0;
+        }
+
+        a {
+            font-size: 2.2rem;
+            font-weight: 700;
+
+            @include m.screen(lg) {
+                font-size: 2rem;
+            }
+            @include m.screen(sm) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

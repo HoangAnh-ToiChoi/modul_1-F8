@@ -1,0 +1,42 @@
+@use "./reset";
+@use "./_default.scss";
+
+@use "./components/_button.scss";
+@use "./components/_small-circle.scss";
+@use "./components/_star-shape.scss";
+
+@use "./layout/globals/grid";
+@use "./layout/globals/header";
+@use "./layout/globals/footer";
+@use "./layout/globals/Testimonials";
+@use "./layout/globals/subscribe";
+
+@use "./pages/home/hero";
+@use "./pages/home/about-section";
+@use "./pages/home/service";
+@use "./pages/home/properties";
+@use "./pages/home/our_project";
+@use "./pages/home/our_team";
+@use "./pages/home/blog-section";
+@use "./pages/home/faq";
+
+
+// *{
+//     outline: 1px solid red;
+// }
+
+.black-bg {
+    background: #000;
+}
+.white-bg {
+    background: #fff;
+}
+.green-bg {
+    background: #017848;
+    width: 100%;
+}
+
+.orange-bg {
+    background: #fd6038;
+    border-radius: 15px;
+}
