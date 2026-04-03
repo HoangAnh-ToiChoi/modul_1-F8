@@ -4,7 +4,8 @@ import path from "path";
 
 export default defineConfig({
     // Đường dẫn gốc khi deploy (gh-pages cần đúng path)
-    base: process.env.NODE_ENV === "production" ? "/modul_1-F8/" : "/",
+    // base: process.env.NODE_ENV === "production" ? "/modul_1-F8/" : "/",
+    base: "/",
 
     // Thư mục chính chứa HTML, SCSS, JS
     root: "src",
@@ -24,7 +25,7 @@ export default defineConfig({
                 about: path.resolve(__dirname, "src/about.html"),
                 practice: path.resolve(__dirname, "src/practice.html"),
                 blog: path.resolve(__dirname, "src/blog.html"),
-                contact: path.resolve(__dirname, "src/contact.html")
+                contact: path.resolve(__dirname, "src/contact.html"),
             },
         },
     },
