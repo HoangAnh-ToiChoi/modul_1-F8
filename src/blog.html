@@ -19,12 +19,12 @@
             rel="stylesheet"
         />
     </head>
-    <body>
-        <%- include('./partials/globals/header.ejs') %>
+    <body class="blog-page">
+        <%- include('./partials/shared/header.ejs') %>
         <main>
-            <h1 style="text-align: center; margin: 100px 0;">Blog Page</h1>
+            <%- include('./partials/pages/blog/hero.ejs') %>
         </main>
-        <%- include('./partials/globals/footer.ejs') %>
+        <%- include('./partials/shared/footer.ejs') %>
 
         <script type="module" src="main.js"></script>
     </body>

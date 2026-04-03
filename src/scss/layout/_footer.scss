@@ -1,6 +1,6 @@
-@use "../../variable" as v;
-@use "../../components/small-circle" as sc;
-@use "../../mixins" as m;
+@use "../abstracts/variables" as v;
+@use "../components/small-circle" as sc;
+@use "../abstracts/mixins" as m;
 
 .m-w280 {
     max-width: 280px;

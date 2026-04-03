@@ -1,7 +1,7 @@
-@use "../../variable" as v;
-@use "../../components/small-circle" as sc;
-@use "../../components/star-shape" as ss;
-@use "../../mixins" as m;
+@use "../abstracts/variables" as v;
+@use "../components/small-circle" as sc;
+@use "../components/star-shape" as ss;
+@use "../abstracts/mixins" as m;
 
 .subscribe {
     font-family: manrope;

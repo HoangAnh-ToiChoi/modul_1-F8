@@ -1,0 +1,68 @@
+@use "../../abstracts/variables" as v;
+@use "../../abstracts/mixins" as m;
+
+.about-hero {
+    padding: 110px 0 90px;
+    font-family: Manrope, sans-serif;
+
+    @include m.screen(lg) {
+        padding: 80px 0 70px;
+    }
+
+    @include m.screen(sm) {
+        padding: 60px 0 50px;
+    }
+
+    .offset-2 {
+        @include m.screen(lg) {
+            margin-left: 0;
+        }
+    }
+
+    .col-8 {
+        @include m.screen(lg) {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    &__tagline {
+        color: v.$color-primary;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+    }
+
+    &__title {
+        font-family: "Roboto Slab", serif;
+        font-size: 5.2rem;
+        line-height: 1.15;
+
+        @include m.screen(lg) {
+            font-size: 4.2rem;
+        }
+
+        @include m.screen(sm) {
+            font-size: 3.4rem;
+        }
+    }
+
+    &__description {
+        max-width: 640px;
+        margin: 0 auto;
+        color: #586863;
+        font-size: 1.8rem;
+        line-height: 1.7;
+
+        @include m.screen(sm) {
+            font-size: 1.6rem;
+        }
+    }
+}

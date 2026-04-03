@@ -2,8 +2,8 @@
 
 @use "sass:map";
 @use "sass:math";
-@use "../../variable" as variables;
-@use "../../mixins";
+@use "../abstracts/variables" as variables;
+@use "../abstracts/mixins";
 
 $container-max-widths: (
     sm: 100%,

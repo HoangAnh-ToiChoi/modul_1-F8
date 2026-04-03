@@ -1,8 +1,9 @@
-@use "../../variable" as v;
+@use "../../abstracts/variables" as v;
 @use "../../components/small-circle" as sc;
-@use "../../mixins" as m;
+@use "../../abstracts/mixins" as m;
 
-.about {
+.home-page {
+    .about {
     padding: 100px 0;
     font-family: manrope;
     color: #fff;
@@ -100,5 +101,6 @@
                 }
             }
         }
+    }
     }
 }

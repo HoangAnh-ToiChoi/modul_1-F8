@@ -1,0 +1,28 @@
+@use "../abstracts/mixins" as m;
+
+.page-placeholder {
+    padding: 100px 0;
+
+    @include m.screen(lg) {
+        padding: 80px 0;
+    }
+
+    @include m.screen(sm) {
+        padding: 60px 0;
+    }
+
+    &__title {
+        font-family: "Roboto Slab", serif;
+        font-size: 4.8rem;
+        line-height: 1.2;
+        text-align: center;
+
+        @include m.screen(lg) {
+            font-size: 4rem;
+        }
+
+        @include m.screen(sm) {
+            font-size: 3.2rem;
+        }
+    }
+}

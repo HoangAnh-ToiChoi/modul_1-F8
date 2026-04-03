@@ -19,12 +19,12 @@
             rel="stylesheet"
         />
     </head>
-    <body>
-        <%- include('./partials/globals/header.ejs') %>
+    <body class="contact-page">
+        <%- include('./partials/shared/header.ejs') %>
         <main>
-            <h1 style="text-align: center; margin: 100px 0;">Contact Page</h1>
+            <%- include('./partials/pages/contact/hero.ejs') %>
         </main>
-        <%- include('./partials/globals/footer.ejs') %>
+        <%- include('./partials/shared/footer.ejs') %>
 
         <script type="module" src="main.js"></script>
     </body>

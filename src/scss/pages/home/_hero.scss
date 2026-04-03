@@ -1,6 +1,7 @@
-@use "../../mixins" as m;
+@use "../../abstracts/mixins" as m;
 
-.hero {
+.home-page {
+    .hero {
     padding: 110px 0;
 
     @include m.screen(xl) {
@@ -123,5 +124,6 @@
                 font-size: 1.2rem;
             }
         }
+    }
     }
 }

@@ -1,9 +1,10 @@
-@use "../../variable" as v;
+@use "../../abstracts/variables" as v;
 @use "../../components/small-circle" as sc;
 @use "../../components/star-shape" as ss;
-@use "../../mixins" as m;
+@use "../../abstracts/mixins" as m;
 
-.blog {
+.home-page {
+    .blog {
     padding-top: 120px;
     font-family: manrope;
     color: #fff;
@@ -118,5 +119,6 @@
             text-decoration: none;
             font-family: roboto slab;
         }
+    }
     }
 }

@@ -1,8 +1,9 @@
-@use "../../variable" as v;
+@use "../../abstracts/variables" as v;
 @use "../../components/small-circle" as sc;
-@use "../../mixins" as m;
+@use "../../abstracts/mixins" as m;
 
-.team {
+.home-page {
+    .team {
     padding-top: 120px;
     padding-bottom: 120px;
     font-family: manrope;
@@ -156,5 +157,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
     }
 }

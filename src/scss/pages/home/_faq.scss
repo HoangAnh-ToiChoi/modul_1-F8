@@ -1,9 +1,10 @@
-@use "../../variable" as v;
+@use "../../abstracts/variables" as v;
 @use "../../components/small-circle" as sc;
 @use "../../components/star-shape" as ss;
-@use "../../mixins" as m;
+@use "../../abstracts/mixins" as m;
 
-.faq {
+.home-page {
+    .faq {
     padding: 120px 0;
     font-family: manrope;
     color: #fff;
@@ -161,5 +162,6 @@
         .faq-content {
             border-bottom: 1px solid #ccc;
         }
+    }
     }
 }

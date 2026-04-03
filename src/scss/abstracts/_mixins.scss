@@ -1,5 +1,5 @@
 @use "sass:map";
-@use "./variable" as variables;
+@use "./variables" as variables;
 
 @mixin screen($key) {
     $breakpoint: map.get(variables.$grid-breakpoints, $key);

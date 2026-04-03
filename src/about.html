@@ -19,18 +19,12 @@
             rel="stylesheet"
         />
     </head>
-    <body>
-        <%- include('./partials/globals/header.ejs') %>
+    <body class="about-page">
+        <%- include('./partials/shared/header.ejs') %>
         <main>
-            <div class="hero">
-                <div class="container">
-                    <div class="row offset-2">
-                        <div class="col-8"></div>
-                    </div>
-                </div>
-            </div>
+            <%- include('./partials/pages/about/hero.ejs') %>
         </main>
-        <!-- <%- include('./partials/globals/footer.ejs') %> -->
+        <!-- <%- include('./partials/shared/footer.ejs') %> -->
 
         <script type="module" src="main.js"></script>
     </body>
