@@ -1,0 +1,78 @@
+@use "../../abstracts/mixins" as m;
+
+.cta {
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+    &-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+        gap: 30px;
+        font-family: Roboto Slab;
+        color: #fff;
+        font-size: 1.8rem;
+
+        @include m.screen(lg) {
+            margin-bottom: 60px;
+            gap: 20px;
+        }
+
+        @include m.screen(sm) {
+            margin-bottom: 40px;
+            gap: 18px;
+        }
+
+        .cta-tagline {
+            text-transform: uppercase;
+        }
+
+        .cta-tagline,
+        .cta-desc {
+            max-width: 500px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 400;
+
+            @include m.screen(sm) {
+                font-size: 1.6rem;
+            }
+        }
+
+        .cta-title {
+            font-size: 4.2rem;
+            font-weight: 700;
+            line-height: 52px;
+
+            @include m.screen(lg) {
+                font-size: 3.2rem;
+                line-height: 42px;
+            }
+
+            @include m.screen(sm) {
+                font-size: 2.6rem;
+                line-height: 36px;
+            }
+        }
+
+        .btn-cta {
+            width: fit-content;
+            height: fit-content;
+            padding: 15px 20px;
+            font-family: manrope;
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.8rem;
+            background: #fd6038;
+            outline: none;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                background: #783df0;
+            }
+        }
+    }
+}

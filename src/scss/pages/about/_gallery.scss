@@ -1,0 +1,179 @@
+@use "../../abstracts/variables" as v;
+@use "../../abstracts/mixins" as m;
+
+.gallery {
+    margin-top: 120px;
+    font-family: Roboto Slab;
+
+    @include m.screen(lg) {
+        padding: 80px 0 70px;
+    }
+
+    @include m.screen(sm) {
+        padding: 60px 0 50px;
+    }
+
+    .offset-2 {
+        @include m.screen(lg) {
+            margin-left: 0;
+        }
+    }
+
+    .col-8 {
+        @include m.screen(lg) {
+            width: 100%;
+        }
+    }
+
+    .col-9 {
+        @include m.screen(lg) {
+            width: 100%;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-tagline {
+        color: #586863;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+    }
+
+    &-title {
+        font-family: Roboto Slab;
+        font-size: 5.2rem;
+        line-height: 1.15;
+        max-width: 600px;
+
+        @include m.screen(lg) {
+            font-size: 4.2rem;
+        }
+
+        @include m.screen(sm) {
+            font-size: 3.4rem;
+        }
+    }
+
+    &-description {
+        max-width: 640px;
+        margin: 0 auto;
+        color: #586863;
+        font-size: 1.8rem;
+        line-height: 1.7;
+        font-family: manrope;
+
+        @include m.screen(sm) {
+            font-size: 1.6rem;
+        }
+    }
+
+    .gallery-img {
+        margin-top: 60px;
+        text-align: center;
+        
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .small-circle {
+            margin-top: 40px;
+            width: 8px;
+            height: 8px;
+            &:not(:first-of-type) {
+                background: #0e1412;
+            }
+        }
+    }
+
+    .yellow_light-bg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0;
+        margin-top: 90px;
+
+        @include m.screen(xl) {
+            padding: 70px 0;
+            margin-top: 120px;
+        }
+        @include m.screen(lg) {
+            padding: 60px 0;
+            margin-top: 80px;
+        }
+        @include m.screen(sm) {
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .list-desc {
+            display: flex;
+            justify-content: space-around;
+
+            @include m.screen(lg) {
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+            }
+
+            .sub-desc {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @include m.screen(lg) {
+                    flex: 0 0 40%;
+                    text-align: center;
+                }
+                @include m.screen(sm) {
+                    flex: 0 0 100%;
+                }
+
+                h3 {
+                    font-size: 4.2rem;
+                    font-weight: 700;
+                    line-height: 52px;
+                    color: #0E1412;
+
+                    @include m.screen(xl) {
+                        font-size: 3.6rem;
+                        line-height: 46px;
+                    }
+                    @include m.screen(lg) {
+                        font-size: 3.2rem;
+                        line-height: 42px;
+                    }
+                    @include m.screen(sm) {
+                        font-size: 2.8rem;
+                        line-height: 38px;
+                    }
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    line-height: 52px;
+                    color: #0E1412;
+
+                    @include m.screen(lg) {
+                        line-height: 34px;
+                    }
+                    @include m.screen(sm) {
+                        font-size: 1.6rem;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

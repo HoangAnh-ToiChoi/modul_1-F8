@@ -56,6 +56,10 @@
     .map {
         width: 100%;
         height: 100%;
+
+        @include m.screen(lg) {
+            min-height: 220px;
+        }
     }
 
     .logo img {
@@ -128,6 +132,20 @@
                 color: #beccc7;
                 line-height: 24px;
             }
+        }
+    }
+
+    @include m.screen(lg) {
+        .row.row-cols-lg-2 > * {
+            width: 50%;
+        }
+    }
+
+    @include m.screen(sm) {
+        overflow-x: hidden;
+
+        .row.row-cols-sm-1 > * {
+            width: 100%;
         }
     }
 }
