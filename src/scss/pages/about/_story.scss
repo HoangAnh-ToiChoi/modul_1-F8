@@ -103,7 +103,7 @@
             &:nth-child(2) {
                 position: absolute;
                 top: 59%;
-                left: 48px;
+                left: 0;
                 width: clamp(140px, 26%, 220px);
                 transform: translate(-50%, -50%);
 
@@ -128,7 +128,7 @@
             &:nth-child(3) {
                 position: absolute;
                 top: 0;
-                right: 60px;
+                right: 0;
                 width: clamp(22px, 4%, 42px);
 
                 @include m.screen(xl) {

@@ -13,10 +13,11 @@
 @use "./shared/page-placeholder";
 @use "./shared/testimonials";
 @use "./shared/subscribe";
+@use "./shared/cta";
 
 @use "./pages/home";
 @use "./pages/about";
-
-// *{
+@use "./pages/practice";
+@use "./pages/contact"; // *{
 //     outline: 1px solid green;
 // }

@@ -1,0 +1,133 @@
+@use "../../abstracts/variables" as v;
+@use "../../abstracts/mixins" as m;
+
+.img-practice {
+    width: min(1370px, calc(100vw - (#{v.$practice-image-inline-spacing-desktop} * 2)));
+    margin: 0 auto  ;
+
+    @include m.screen(md) {
+        width: calc(100vw - (#{v.$practice-image-inline-spacing-mobile} * 2));
+        margin-top: 32px;
+    }
+
+    img {
+        width: 100%;
+        max-height: 720px;
+        object-fit: cover;
+    }
+}
+
+.practice {
+    margin: 120px 0;
+
+    @include m.screen(lg) {
+        margin: 96px 0;
+    }
+
+    @include m.screen(sm) {
+        margin: 72px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: v.$practice-section-gap-desktop;
+
+        @include m.screen(lg) {
+            gap: v.$practice-section-gap-tablet;
+        }
+
+        @include m.screen(sm) {
+            gap: v.$practice-section-gap-mobile;
+        }
+    }
+
+    .content {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: v.$practice-content-gap-desktop;
+
+        @include m.screen(lg) {
+            gap: v.$practice-content-gap-tablet;
+        }
+
+        @include m.screen(sm) {
+            gap: v.$practice-content-gap-mobile;
+        }
+
+        .practice__title {
+            align-self: flex-start;
+            font-family: Roboto Slab;
+            font-size: v.$practice-title-size-desktop;
+            font-weight: 700;
+            line-height: 1.24;
+            color: #0e1412;
+            text-transform: uppercase;
+
+            @include m.screen(lg) {
+                font-size: v.$practice-title-size-tablet;
+            }
+
+            @include m.screen(sm) {
+                font-size: v.$practice-title-size-mobile;
+            }
+        }
+
+        .practice-list {
+            align-self: flex-start;
+            margin-left: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            list-style: disc;
+
+            @include m.screen(sm) {
+                margin-left: 22px;
+                gap: 12px;
+            }
+
+            li {
+                font-family: Manrope;
+                font-size: v.$practice-body-size-desktop;
+                font-weight: 500;
+                line-height: 1.6;
+                color: #0e1412;
+
+                @include m.screen(lg) {
+                    font-size: v.$practice-body-size-tablet;
+                }
+
+                @include m.screen(sm) {
+                    font-size: v.$practice-body-size-mobile;
+                }
+
+                &:empty {
+                    display: none;
+                }
+            }
+        }
+
+        .practice__text {
+            font-family: Manrope;
+            font-size: v.$practice-body-size-desktop;
+            font-weight: 400;
+            line-height: 1.78;
+            color: #586863;
+
+            @include m.screen(lg) {
+                font-size: v.$practice-body-size-tablet;
+            }
+
+            @include m.screen(sm) {
+                font-size: v.$practice-body-size-mobile;
+                line-height: 1.7;
+            }
+        }
+    }
+}
