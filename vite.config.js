@@ -5,7 +5,7 @@ import path from "path";
 export default defineConfig({
     // Đường dẫn gốc khi deploy (gh-pages cần đúng path)
     // base: process.env.NODE_ENV === "production" ? "/modul_1-F8/" : "/",
-    base: "/",
+    base: "./",
 
     // Thư mục chính chứa HTML, SCSS, JS
     root: "src",
