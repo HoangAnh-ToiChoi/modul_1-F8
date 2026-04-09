@@ -7,7 +7,7 @@
     padding: 20px 0;
     figure {
         padding: 10px 0 0;
-        img{
+        img {
             margin: 0;
         }
         @include m.screen(lg) {
@@ -168,7 +168,8 @@
 
 .about-page,
 .practice-page,
-.contact-page {
+.contact-page,
+.blog-page {
     .header {
         background: #f8ebc9;
     }

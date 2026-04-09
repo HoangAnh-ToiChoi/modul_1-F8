@@ -18,6 +18,9 @@
 @use "./pages/home";
 @use "./pages/about";
 @use "./pages/practice";
-@use "./pages/contact"; // *{
-//     outline: 1px solid green;
-// }
+@use "./pages/contact";
+@use "./pages/blog";
+
+* {
+    outline: 1px solid red;
+}
