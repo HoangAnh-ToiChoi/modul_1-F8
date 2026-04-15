@@ -116,7 +116,7 @@
             overflow: hidden;
             border-radius: 12px;
 
-            button {
+            .btn {
                 visibility: hidden;
                 opacity: 0;
                 pointer-events: none;
@@ -153,7 +153,7 @@
             }
 
             &:hover {
-                button {
+                .btn {
                     visibility: visible;
                     opacity: 1;
                     pointer-events: auto;
@@ -161,28 +161,6 @@
                 }
             }
         }
-
-        // &-btn {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     margin-top: 60px;
-
-        //     button {
-        //         font-family: manrope;
-        //         font-weight: 600;
-        //         background: #fd6038;
-        //         padding: 15px 50px;
-        //         font-size: 1.8rem;
-        //         color: #fff;
-        //         outline: none;
-        //         border: none;
-
-        //         &:hover {
-        //             cursor: pointer;
-        //         }
-        //     }
-        // }
     }
 
     &-btn {
@@ -195,7 +173,7 @@
             margin-top: 40px;
         }
 
-        button {
+        .btn {
             font-family: manrope;
             font-weight: 600;
             background: #fd6038;

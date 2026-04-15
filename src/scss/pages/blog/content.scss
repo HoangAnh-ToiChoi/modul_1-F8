@@ -20,6 +20,18 @@
         padding: 30px;
         border: 1px solid #dbe1de;
         border-radius: 10px;
+        transition:
+            box-shadow,
+            transform 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transform: translateY(-8px);
+            a {
+                color: #fd6038;
+            }
+        }
 
         @include m.screen(md) {
             padding: 24px;
@@ -105,11 +117,6 @@
 
             @include m.screen(sm) {
                 font-size: 1.6rem;
-            }
-
-            &:hover {
-                cursor: pointer;
-                color: #fd6038;
             }
         }
     }

@@ -25,5 +25,39 @@ $practice-body-size-desktop: 1.8rem;
 $practice-body-size-tablet: 1.7rem;
 $practice-body-size-mobile: 1.6rem;
 
-$color-primary: #fd6038;
-$color-secondary: #beccc7;
+// =====================
+// Colors
+// =====================
+
+// Brand colors
+$color-primary: #fd6038;       
+$color-accent: #783df0;        
+
+// Neutral - Black & White
+$color-black: #000000;
+$color-white: #ffffff;
+
+// Dark tones
+$color-dark: #0e1412;          
+$color-dark-alt: #313d39;      
+
+// Text / Muted
+$color-text-muted: #586863;    
+
+// Background colors
+$color-bg-yellow-light: #f8ebc9;  
+$color-bg-gray-light: #e0e0e0;    
+$color-bg-dark-card: #eceaea;     
+
+// Green (statistics section)
+$color-green: #017848;
+
+// Special
+$color-border: #ccc;            
+$color-yellow-link: #fed464;    
+
+// =====================
+// Fonts
+// =====================
+$font-primary: 'Manrope', sans-serif;    
+$font-heading: 'Roboto Slab', serif;     

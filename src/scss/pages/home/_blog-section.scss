@@ -5,120 +5,134 @@
 
 .home-page {
     .blog {
-    padding-top: 120px;
-    font-family: manrope;
-    color: #fff;
-
-    @include m.screen(xl) {
-        padding-top: 90px;
-    }
-    @include m.screen(lg) {
-        padding-top: 60px;
-    }
-    @include m.screen(sm) {
-        padding-top: 40px;
-    }
-
-    .blog-heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 60px;
+        padding-top: 120px;
+        font-family: manrope;
+        color: #fff;
 
         @include m.screen(xl) {
-            margin-bottom: 50px;
+            padding-top: 90px;
         }
         @include m.screen(lg) {
-            margin-bottom: 40px;
+            padding-top: 60px;
         }
         @include m.screen(sm) {
-            margin-bottom: 30px;
+            padding-top: 40px;
         }
 
-        .blog-tagline {
-            font-family: roboto slab;
-            font-size: 1.8rem;
-            color: v.$color-primary;
-        }
-
-        .blog-title {
-            font-size: 4.2rem;
-            font-weight: 700;
-            color: #000;
-            line-height: 52px;
-            max-width: 600px;
-            text-align: center;
-            font-family: Roboto Slab;
+        .blog-heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 60px;
 
             @include m.screen(xl) {
-                font-size: 3.6rem;
-                line-height: 46px;
+                margin-bottom: 50px;
             }
             @include m.screen(lg) {
-                font-size: 3.2rem;
-                line-height: 42px;
+                margin-bottom: 40px;
             }
             @include m.screen(sm) {
-                font-size: 2.8rem;
-                line-height: 38px;
+                margin-bottom: 30px;
             }
-        }
-    }
 
-    .blog-desc {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        font-family: manrope;
-        margin-top: 20px;
-
-        .blog-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #000;
-            line-height: 32px;
-
-            @include m.screen(lg) {
-                font-size: 2rem;
-                line-height: 30px;
-            }
-            @include m.screen(sm) {
+            .blog-tagline {
+                font-family: roboto slab;
                 font-size: 1.8rem;
-                line-height: 28px;
+                color: v.$color-primary;
+            }
+
+            .blog-title {
+                font-size: 4.2rem;
+                font-weight: 700;
+                color: #000;
+                line-height: 52px;
+                max-width: 600px;
+                text-align: center;
+                font-family: Roboto Slab;
+
+                @include m.screen(xl) {
+                    font-size: 3.6rem;
+                    line-height: 46px;
+                }
+                @include m.screen(lg) {
+                    font-size: 3.2rem;
+                    line-height: 42px;
+                }
+                @include m.screen(sm) {
+                    font-size: 2.8rem;
+                    line-height: 38px;
+                }
             }
         }
 
-        .blog-date {
-            font-size: 1.6rem;
-            font-weight: 400;
-            color: #586863;
-            line-height: 28px;
-        }
+        .blog-content {
+            transition:
+                transform,
+                box-shadow 0.3s ease;
 
-        .blog-sub-desc {
-            font-size: 1.6rem;
-            font-weight: 400;
-            color: #586863;
-            max-width: 500px;
-            text-align: left;
+            .blog-desc {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-family: manrope;
+                margin-top: 20px;
+                padding: 0 30px;
 
-            @include m.screen(lg) {
-                max-width: 100%;
+                .blog-title {
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                    color: #000;
+                    line-height: 32px;
+
+                    @include m.screen(lg) {
+                        font-size: 2rem;
+                        line-height: 30px;
+                    }
+                    @include m.screen(sm) {
+                        font-size: 1.8rem;
+                        line-height: 28px;
+                    }
+                }
+
+                .blog-date {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #586863;
+                    line-height: 28px;
+                }
+
+                .blog-sub-desc {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #586863;
+                    max-width: 500px;
+                    text-align: left;
+
+                    @include m.screen(lg) {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .read-more {
+                padding: 20px 30px;
+                a {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    color: #000;
+                    line-height: 28px;
+                    text-decoration: none;
+                    font-family: roboto slab;
+                }
+            }
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0px 20px 70px 0px rgba(0, 0, 0, 0.1);
+                a {
+                    color: #fd6038;
+                }
             }
         }
-    }
-
-    .read-more {
-        margin-top: 20px;
-        a {
-            font-size: 1.8rem;
-            font-weight: 400;
-            color: v.$color-primary;
-            line-height: 28px;
-            text-decoration: none;
-            font-family: roboto slab;
-        }
-    }
     }
 }

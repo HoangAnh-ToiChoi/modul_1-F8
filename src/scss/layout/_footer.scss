@@ -50,6 +50,11 @@
             line-height: 28px;
             padding: 12px 0;
             text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #fd6038;
+            }
         }
     }
 
@@ -64,10 +69,10 @@
 
     .logo img {
         color: #fff;
-        margin-bottom: 25px; 
+        margin-bottom: 25px;
 
         @include m.screen(sm) {
-            margin-left: 0; 
+            margin-left: 0;
         }
     }
 
@@ -81,7 +86,7 @@
         @include m.screen(sm) {
             justify-content: flex-start;
             gap: 15px;
-            margin-top: 15px; 
+            margin-top: 15px;
         }
 
         a {
@@ -98,7 +103,7 @@
     .footer-bottom {
         margin-top: 60px;
         padding-top: 40px;
-        border-top: 1px solid #313d39; 
+        border-top: 1px solid #313d39;
 
         @include m.screen(xl) {
             margin-top: 50px;
@@ -112,7 +117,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+
             @include m.screen(sm) {
                 flex-direction: column;
                 gap: 20px;
